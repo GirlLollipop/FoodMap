@@ -9,7 +9,7 @@
   <title>FoodMap</title>
 </head>
 <body>
-  <!--
+  <!--vista splash-->
   <section class="splash-view container-fluid">
     <div class="row align-items-center">
       <div class= "col-xs-12 col-sm-12" id="title-splash">
@@ -17,7 +17,6 @@
       </div>
     </div>
   </section>
--->
   <section class="principal-view container">
     <div class="row">
         <div class="col-xs-12 col-sm-12 hidden-md-up">
@@ -38,35 +37,98 @@
       </div>
       </div>
       <div class="row">
-          <div class="input-group col-xs-10 col-sm-10">
-            <input type="text" class="form-control" placeholder="Encuentra tu restaurant...">
-            <span class="input-group-btn">
-              <button class="btn btn-default" type="button">Go!</button>
-            </span>
-          </div>
+        <div class="col-xs-12 col-sm-12">
+            <label for="kwd_search"></label> <input type="text" id="kwd_search" placeholder="Encuentra tu restaurant!!" value=""/>
         </div>
-  </div>
+        </div>
   <div class="row">
-    <div class="mosaic1 col-md-12">
-       <img src="assets/images/food1.jpg">
-       <img src="assets/images/food2.jpg">
-       <img src="assets/images/food3.jpg">
+    <div class="col-xs-12 col-sm-12 hidden-md-up">
+      <a href="#"data-toggle="modal" data-target="#miModal"><img src="assets/images/papa-guapa.jpg"></a>
+      <a href="#"data-toggle="modal" data-target="#pendulo"><img src="assets/images/el-pendulo.jpg"></a>
+      <a href="#"data-toggle="modal" data-target="#gato"><img src="assets/images/gato-calavera.jpg"></a>
     </div>
   </div>
   <div class="row">
-    <div class="mosaic2 col-md-12">
-       <img src="assets/images/food4.jpg">
-       <img src="assets/images/food5.jpg">
+    <div class="col-xs-12 col-sm-12 hidden-md-up">
+      <a href="#"><img src="assets/images/gatorta.jpg"></a>
+      <a href="#"><img src="assets/images/helado-oscuro.jpg"></a>
+      <a href="#"><img src="assets/images/cancino.jpg"></a>
     </div>
   </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 hidden-md-up">
+      <a href="#"><img src="assets/images/los-insurgentes.jpg"></a>
+      <a href="#"><img src="assets/images/perro-negro.jpg"></a>
+      <a href="#"><img src="assets/images/tokio.jpg"></a>
+    </div>
+  </div>
+<!--Modales-->
+<!--Papa -->
+  <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Papa Guapa</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+        </button>
+			</div>
+			<div class="modal-body">
+        <img src="assets/images/papa-guapa2.jpg" alt="">
+        <h6>Un lugar decorado en estilo retro que sirve papas rellenas de ingredientes mexicanos y internacionales.</h6>
+        <h6>Av. Insurgentes Sur 179, Cuauhtémoc, Hipódromo, 06100 Ciudad de México, CDMX</h6>
+        <h6>Martes-Lunes 12:00 - 22:00 hrs</h6>
+        <button type="button" class="btn btn-outline-warning">Pide ahora!</button>
+      </div>
+		</div>
+	</div>
+</div>
+<!--Péndulo -->
+  <div class="modal fade" id="pendulo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">El Péndulo</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+        </button>
+			</div>
+			<div class="modal-body">
+        <img src="assets/images/pendulo2.jpg" alt="">
+        <h6>Dentro de esta conocida librería se puede disfrutar comida mexicana e internacional y una variedad de bebidas.</h6>
+        <h6>Av. Insurgentes Sur 179, Cuauhtémoc, Hipódromo, 06100 Ciudad de México, CDMX</h6>
+        <h6>Martes-Lunes 12:00 - 22:00 hrs</h6>
+        <button type="button" class="btn btn-outline-warning">Pide ahora!</button>
+      </div>
+		</div>
+	</div>
+</div>
+<!--Gato Calavera-->
+  <div class="modal fade" id="gato" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Gato Calavera</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+        </button>
+			</div>
+			<div class="modal-body">
+        <img src="assets/images/gato2.jpg" alt="">
+        <h6>Platillos americanos y cervezas en un lugar con escenario para música en vivo y decoraciones estilo punk.</h6>
+        <h6>Av. Insurgentes Sur 179, Cuauhtémoc, Hipódromo, 06100 Ciudad de México, CDMX</h6>
+        <h6>Martes-Lunes 12:00 - 22:00 hrs</h6>
+        <button type="button" class="btn btn-outline-warning">Pide ahora!</button>
+      </div>
+		</div>
+	</div>
+</div>
 
   </section>
 
-
-  <script type="text/javascript" src="js/app.js">
-
-  </script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/data.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiFFxmldIKcRcSVTuMQbTHvKlnzaiZFpM&callback=initMap"
     async defer></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
