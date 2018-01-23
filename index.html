@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <title>FoodMap</title>
+</head>
+<body>
+  <!--
+  <section class="splash-view container-fluid">
+    <div class="row align-items-center">
+      <div class= "col-xs-12 col-sm-12" id="title-splash">
+        <h1>Foodmap</h1>
+      </div>
+    </div>
+  </section>
+-->
+  <section class="principal-view container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 hidden-md-up">
+        <div class="page-header">
+          <h1>Foodmap</h1>
+          <hr>
+        </div>
+        </div>
+    </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 hidden-md-up">
+          <div id="map"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="subtitle">
+        <h3>Comida cerca de ti</h3>
+      </div>
+      </div>
+      <div class="row">
+          <div class="input-group col-xs-10 col-sm-10">
+            <input type="text" class="form-control" placeholder="Encuentra tu restaurant...">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Go!</button>
+            </span>
+          </div>
+        </div>
+  </div>
+  <div class="row">
+    <div class="mosaic1 col-md-12">
+       <img src="assets/images/food1.jpg">
+       <img src="assets/images/food2.jpg">
+       <img src="assets/images/food3.jpg">
+    </div>
+  </div>
+  <div class="row">
+    <div class="mosaic2 col-md-12">
+       <img src="assets/images/food4.jpg">
+       <img src="assets/images/food5.jpg">
+    </div>
+  </div>
+
+  </section>
+
+
+  <script type="text/javascript" src="js/app.js">
+
+  </script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiFFxmldIKcRcSVTuMQbTHvKlnzaiZFpM&callback=initMap"
+    async defer></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
